@@ -19,5 +19,5 @@ kubectl apply -f k8s
 
 # upgrader images to latest
 kubectl set image deployment/client-deployment client=gowthamyadav/multi-client:$SHA
-kubectl set image deployment/server-deployment client=gowthamyadav/multi-server:$SHA
-kubectl set image deployment/worker-deployment client=gowthamyadav/multi-worker:$SHA
+kubectl set image deployment/server-deployment server=gowthamyadav/multi-server:$SHA
+kubectl set image deployment/worker-deployment worker=gowthamyadav/multi-worker:$SHA
